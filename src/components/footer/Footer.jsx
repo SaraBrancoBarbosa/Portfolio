@@ -7,22 +7,22 @@ const logoMail = "assets/icons/logo-mail.svg"
 
 function Footer() {
     return (
-        <footer>
-            <div>
+        <footer className="flex flex-col items-center bg-violet-100 w-full p-4">
+            <div className="flex gap-6 justify-center">
                 <Link to="https://www.linkedin.com/in/sara-barbosa-ba0157207/">
-                    <img src={logoLinkedIn} className="w-14" alt="Lien vers le compte LinkedIn" />
+                    <img src={logoLinkedIn} className="w-10 sm:w-14 hover:opacity-60" alt="Lien vers le compte LinkedIn" />
                 </Link>
 
                 <Link to="https://www.linkedin.com/in/sara-barbosa-ba0157207/">
-                    <img src={logoGitHub} className="w-14" alt="Lien vers le compte GitHub" />
+                    <img src={logoGitHub} className="w-10 sm:w-14 hover:opacity-60" alt="Lien vers le compte GitHub" />
                 </Link>
 
                 <Link to="https://www.youtube.com/@SaraBrancoBarbosa">
-                    <img src={logoYoutube} className="w-14" alt="Lien vers le compte YouTube" />
+                    <img src={logoYoutube} className="w-10 sm:w-14 hover:opacity-60" alt="Lien vers le compte YouTube" />
                 </Link>
 
                 <Link to="mailto:sara.barbosa@hotmail.fr">
-                    <img src={logoMail} className="w-14" alt="Lien pour m'envoyer un mail" />
+                    <img src={logoMail} className="w-10 sm:w-14 hover:opacity-60" alt="Lien pour m'envoyer un mail" />
                 </Link>
             </div>
 
