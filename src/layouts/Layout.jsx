@@ -4,17 +4,17 @@ import Footer from "../components/footer/Footer"
 
 const Layout = () => {
     return (
-      <>
-        <div>
+      <div className="flex flex-col h-screen justify-between items-center">
+        <div className="max-w-500 w-full">
           <Header />
 
-          <main>
+          <main className="mx-auto px-4 md:flex mb-auto bg-green-500">
             <Outlet />
           </main>
 
         </div>
         <Footer />
-      </>
+      </div>
     )
   }
   
