@@ -1,17 +1,28 @@
 import { Link } from "react-router"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 function Header() {
 
-    // To underline the active NavLink depending of the current page
-    //const location = useLocation()
+    // To manage the dropdown
+    const [isOpen, setIsOpen] = useState(false)
 
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+    const menuRef = useRef()
+    const iconRef = useRef()
 
-    // To manage the projects' dropdown
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen)
-    }
+    // To close the dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if(e.target !== menuRef.current && e.target !== iconRef.current) {
+                setIsOpen(false)
+            }
+        }
+        
+        window.addEventListener("click", handleClickOutside)
+
+        return () => {
+            window.removeEventListener("click", handleClickOutside)
+        }   
+    },[])
     
     return (
         <header className="bg-violet-100">
@@ -31,9 +42,10 @@ function Header() {
                                 Projets
                             </Link>
                             <svg 
-                                id="menu-button"
-                                onClick={toggleDropdown}
-                                aria-expanded={isDropdownOpen ? "true" : "false"}
+                                id="dropdown-menu"
+                                onClick={() => setIsOpen(!isOpen)}
+                                aria-expanded={isOpen ? "true" : "false"}
+                                ref={iconRef}
                                 aria-haspopup="true" 
                                 viewBox="0 0 20 20" 
                                 fill="currentColor" 
@@ -46,18 +58,40 @@ function Header() {
                          </div>
 
                         {/* Dropdown, hidden by default */}
-                        <div 
-                            role="menu" 
-                            tabIndex="-1" 
-                            aria-labelledby="menu-button" 
-                            aria-orientation="vertical" 
-                            className={`absolute right-0 w-28 sm:w-36 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-hidden ${isDropdownOpen ? "block" : "hidden"}`}
-                        >
-                            <div role="none" className="py-1 text-end">
-                                <Link id="menu-item-0" role="menuitem" to="/projects/websites" tabIndex="-1" className="block px-4 py-2 text-sm sm:text-xl text-gray-700">Sites web</Link>
-                                <Link id="menu-item-1" role="menuitem" to="/projects/videos" tabIndex="-1" className="block px-4 py-2 text-sm sm:text-xl text-gray-700">Vidéos</Link>
+                        {isOpen && (
+                            <div 
+                                role="menu" 
+                                ref={menuRef}
+                                tabIndex="-1" 
+                                aria-labelledby="dropdown-menu" 
+                                aria-orientation="vertical" 
+                                className="absolute right-0 w-28 sm:w-36 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-hidden"
+                            >
+                                <div role="none" className="py-1 text-end">
+                                    <Link 
+                                        id="menu-item-0" 
+                                        role="menuitem" 
+                                        to="/projects/websites" 
+                                        tabIndex="-1" 
+                                        className="block px-4 py-2 text-sm sm:text-xl text-gray-700"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Sites web
+                                    </Link>
+                                    <Link 
+                                        id="menu-item-1" 
+                                        role="menuitem" 
+                                        to="/projects/videos" 
+                                        tabIndex="-1" 
+                                        className="block px-4 py-2 text-sm sm:text-xl text-gray-700"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Vidéos
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+
+                        )}
                     </div>
                     
                 </nav>
