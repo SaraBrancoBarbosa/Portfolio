@@ -15,7 +15,7 @@ function Header() {
     
     return (
         <header className="bg-violet-100">
-            <div className="p-4 flex flex-col gap-2 sm:gap-6 sm:flex-row items-center justify-center sm:justify-between">
+            <div className="px-10 py-3 flex flex-col gap-2 sm:gap-6 sm:flex-row items-center justify-center sm:justify-between">
                 
                 <Link to="/">
                     <img src="assets/logo.jpg" className="w-24 sm:w-48 rounded-full" alt="Logo du site. Le lien mène à la page d'accueil." />
@@ -54,8 +54,8 @@ function Header() {
                             className={`absolute right-0 w-28 sm:w-36 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-hidden ${isDropdownOpen ? "block" : "hidden"}`}
                         >
                             <div role="none" className="py-1 text-end">
-                                <Link id="menu-item-0" role="menuitem" href="#" tabIndex="-1" className="block px-4 py-2 text-sm sm:text-xl text-gray-700">Sites web</Link>
-                                <Link id="menu-item-1" role="menuitem" href="#" tabIndex="-1" className="block px-4 py-2 text-sm sm:text-xl text-gray-700">Vidéos</Link>
+                                <Link id="menu-item-0" role="menuitem" to="/projects/websites" tabIndex="-1" className="block px-4 py-2 text-sm sm:text-xl text-gray-700">Sites web</Link>
+                                <Link id="menu-item-1" role="menuitem" to="/projects/videos" tabIndex="-1" className="block px-4 py-2 text-sm sm:text-xl text-gray-700">Vidéos</Link>
                             </div>
                         </div>
                     </div>
