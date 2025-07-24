@@ -13,13 +13,13 @@ function Projects() {
       <div className="bg-red-200">
         <h2>Les sites et applications web</h2>
         <p>Blablabla</p>
-        <Link>Lien pour accéder à la page</Link>
+        <Link to="/projects/websites">Lien pour accéder à la page</Link>
       </div>
 
       <div className="bg-green-300">
         <h2>Les montages vidéo</h2>
         <p>Blablabla</p>
-        <Link>Lien pour accéder à la page</Link>
+        <Link to="/projects/videos">Lien pour accéder à la page</Link>
       </div>
 
     </div>
