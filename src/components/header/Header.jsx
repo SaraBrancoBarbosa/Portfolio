@@ -26,10 +26,10 @@ function Header() {
     
     return (
         <header className="bg-violet-100">
-            <div className="px-10 py-3 flex flex-col gap-2 sm:gap-6 sm:flex-row items-center justify-center sm:justify-between">
+            <div className="px-10 py-7 flex flex-col gap-2 sm:gap-6 sm:flex-row items-center justify-center sm:justify-between">
                 
                 <Link to="/">
-                    <img src="assets/logo.jpg" className="w-24 sm:w-48 rounded-full" alt="Logo du site. Le lien mène à la page d'accueil." />
+                    <img src="assets/ProjetLogo.svg" className="w-24 sm:w-48" alt="Logo du site. Le lien mène à la page d'accueil." />
                 </Link>
 
                 <nav className="flex gap-6 justify-center text-sm sm:text-xl uppercase">
