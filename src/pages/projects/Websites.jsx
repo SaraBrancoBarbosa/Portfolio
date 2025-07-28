@@ -3,7 +3,7 @@ import WebsitesContainer from "../../components/Containers/WebsitesContainer"
 
 function Websites() {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col gap-10">
       
       <div className="bg-blue-500">
         <h1>Les sites et applications web</h1>
@@ -11,16 +11,16 @@ function Websites() {
         <p>Cette section regroupe plusieurs de mes projets.</p>
       </div>
 
-      <section className="bg-red-200">
         <WebsitesContainer
+          background="/assets/projects/backgrounds/hrnetBg.jpg"
           image="assets/projects/hrnetLogo.png"
           title="HRnet"
           type="Réalisation d’un site web pour une entreprise fictive"
           date="Avril – mai 2025"
           role="Développeuse web : passer une librairie jQuery vers React pour le site d’une entreprise"
           setting="Projet OpenClassrooms pour ma formation de Développeur d’application – JavaScript React"
-          websiteLink="https://github.com/SaraBrancoBarbosa/HRnet"
-          codeLink="https://sarabrancobarbosa.github.io/HRnet/"
+          websiteLink="https://sarabrancobarbosa.github.io/HRnet/"
+          codeLink="https://github.com/SaraBrancoBarbosa/HRnet"
           video={`https://youtu.be/W7qtqrIH2_I`}
           client="Grande société financière WealthHealth (fictive)"
           requests=
@@ -36,10 +36,9 @@ function Websites() {
             Sass
             Jest`}
         />  
-      </section>
-
-      <section className="bg-green-300">
+      
         <WebsitesContainer
+          background="/assets/projects/backgrounds/argentBankBg.jpg"
           image="assets/projects/argentBankLogo.png"
           title="Argent Bank"
           type="Réalisation d’un site web pour une entreprise fictive"
@@ -60,10 +59,9 @@ function Websites() {
             Redux Toolkit
             MongDB`}
         />  
-      </section>
-
-      <section className="bg-red-200">
+      
         <WebsitesContainer
+          background="/assets/projects/backgrounds/fannynjaBg.jpg"
           image="assets/projects/fannynjaLogo.png"
           title="Les personnages de Fannynja"
           type="Réalisation d’un site web pour une amie"
@@ -87,10 +85,9 @@ function Websites() {
             Sass
             PaintTool Sai 2 (illustrations)`}
         />  
-      </section>
 
-      <section className="bg-green-300">
         <WebsitesContainer
+          background="/assets/projects/backgrounds/roulcoolsBg.jpg"
           image="assets/projects/roulcoolsLogo.png"
           title="Association Roulcools Bike Elzange"
           type="Réalisation d’un site web et d'un forum"
@@ -112,11 +109,10 @@ function Websites() {
             {`Wordpress
             phpBB
             o2switch (hébergement)`}
-        />  
-      </section>
-
-      <section className="bg-red-200">
+        />
+      
         <WebsitesContainer
+          background="/assets/projects/backgrounds/econceptBg.jpg"
           image="assets/projects/econceptLogo.png"
           title="E-Concept Applications"
           type="Refonte du site web"
@@ -135,10 +131,8 @@ function Websites() {
             PhpStorm
             Affinity Designer
             Hébergement chez l’entreprise`}
-        />  
-      </section>
-
-    </div>
+        />
+      </div>
   )
 }
 
