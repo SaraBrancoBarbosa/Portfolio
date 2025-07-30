@@ -7,19 +7,39 @@ function Projects() {
       <div className="bg-blue-500">
         <h1>Mes projets</h1>
 
-        <p>Cette section regroupe les informations sur mes projets.</p>
+        <h2>Cette section regroupe les informations sur mes projets.</h2>
       </div>
 
-      <div className="bg-red-200">
-        <h2>Les sites et applications web</h2>
-        <p>Blablabla</p>
-        <Link to="/projects/websites">Lien pour accéder à la page</Link>
+      <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 gap-10 p-10 justify-center items-center bg-blue-200">
+        <div className="flex flex-col items-center text-center gap-5">
+          <p>Cette section regroupe une sélection de sites web que j'ai codé dans différents contextes (formations, stages, projets personnels...).</p>
+          <p>Tous mes autres projets se trouvent dans <a href="https://github.com/SaraBrancoBarbosa" className="underline">ma page GitHub !</a></p>
+          <Link to="/projects/websites">
+            <button type="button" className="text-white rounded-2xl hover:scale-110 transition-transform duration-200">
+              Accéder à la page
+            </button>
+          </Link>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Logo du site. Le lien mène à la page d'accueil." />
+        </div>
       </div>
 
-      <div className="bg-green-300">
-        <h2>Les montages vidéo</h2>
-        <p>Blablabla</p>
-        <Link to="/projects/videos">Lien pour accéder à la page</Link>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 justify-center items-center bg-green-300">
+        <div className="flex flex-col items-center">
+          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Logo du site. Le lien mène à la page d'accueil." />
+        </div>
+
+        <div className="flex flex-col items-center text-center gap-5">
+          <p>Cette section regroupe les vidéos que j'ai monté pour mon Master Audiovisuel, Médias Interactifs Numériques et Jeux, et pour des projets personnels.</p>
+          <p>Tous mes projets se trouvent dans <a href="https://www.youtube.com/@SaraBrancoBarbosa" className="underline">ma page YouTube !</a></p>
+          <Link to="/projects/videos">
+            <button type="button" className="text-white rounded-2xl hover:scale-110 transition-transform duration-200">
+              Accéder à la page
+            </button>
+          </Link>
+        </div>  
       </div>
 
     </div>
