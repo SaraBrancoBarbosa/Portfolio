@@ -15,13 +15,13 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
         <section className="relative overflow-hidden rounded-md">
 
             <div 
-                className="absolute inset-0 bg-cover bg-center filter blur-xs scale-150 z-0"
+                className="absolute inset-0 bg-cover bg-center filter scale-150 z-0 bg-blend-multiply bg-gray-400 "
                 style={{ backgroundImage: `url(${background})` }}
             />
 
             <div className="relative z-10">
-                <div className="flex lg:gap-5 flex-col lg:flex-row py-10 px-5">
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white/90 rounded-t-md lg:rounded-md p-5 pb-0 lg:pb-5">
+                <div className="flex lg:gap-10 flex-col lg:flex-row p-10">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-md p-5 pb-0 lg:pb-5">
                         <div className="flex flex-col gap-2">
                             <img src={image} alt="Logo du projet" className="h-24 md:h-48 w-fit rounded-md" />
                             <h2 className="text-3xl md:text-4xl text-violet-700">{title}</h2>
@@ -56,7 +56,7 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
                         }
                     </div>
 
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white/90 rounded-b-md lg:rounded-md p-5">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-b-md lg:rounded-md p-5">
                         <div>
                             <h3 className="text-xl md:text-2xl text-violet-500">Lien du site web</h3>
                             {websiteLink &&
