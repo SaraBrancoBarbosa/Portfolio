@@ -1,9 +1,18 @@
-import { Link } from "react-router"
+import { useEffect } from "react"
 import WebsitesContainer from "../../components/Containers/WebsitesContainer"
+import ScrollToTop from "../../components/scrollToTop/ScrollToTop"
 
 function Websites() {
+  
+  // To load at the top of the page after render
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="w-full flex flex-col gap-10">
+
+      <ScrollToTop />
       
       <div className="bg-blue-500">
         <h1>Les sites et applications web</h1>

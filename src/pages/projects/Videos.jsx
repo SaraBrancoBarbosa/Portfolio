@@ -1,8 +1,18 @@
+import { useEffect } from "react"
 import { Link } from "react-router"
+import ScrollToTop from "../../components/scrollToTop/ScrollToTop"
 
 function Videos() {
+  
+  // To load at the top of the page after render
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <div className="w-full">
+
+      <ScrollToTop />
       
       <div className="bg-blue-500">
         <h1>Les montages de vidéos</h1>
