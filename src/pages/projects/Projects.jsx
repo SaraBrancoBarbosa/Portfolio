@@ -22,13 +22,13 @@ function Projects() {
         </div>
 
         <div className="flex flex-col items-center">
-          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Logo du site. Le lien mène à la page d'accueil." />
+          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Image d'illustration pour la section sites web." />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 justify-center items-center bg-green-300">
         <div className="flex flex-col items-center">
-          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Logo du site. Le lien mène à la page d'accueil." />
+          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Image d'illustration pour la section vidéos." />
         </div>
 
         <div className="flex flex-col items-center text-center gap-5">
