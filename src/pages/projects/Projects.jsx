@@ -16,19 +16,19 @@ function Projects() {
           <p>Tous mes autres projets se trouvent dans <a href="https://github.com/SaraBrancoBarbosa" className="underline">ma page GitHub !</a></p>
           <Link to="/projects/websites">
             <button type="button" className="text-white rounded-2xl hover:scale-110 transition-transform duration-200">
-              Accéder à la page
+              Accéder aux sites web
             </button>
           </Link>
         </div>
 
         <div className="flex flex-col items-center">
-          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Image d'illustration pour la section sites web." />
+          <img src="assets/projects/projectWebsites.png" className="w-64 sm:w-120" alt="Image d'illustration pour la section sites web." />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-10 justify-center items-center bg-green-300">
         <div className="flex flex-col items-center">
-          <img src="assets/logo.jpg" className="w-48 sm:w-64 rounded-full" alt="Image d'illustration pour la section vidéos." />
+          <img src="assets/projects/projectVideos.png" className="w-64 sm:w-120" alt="Image d'illustration pour la section vidéos." />
         </div>
 
         <div className="flex flex-col items-center text-center gap-5">
@@ -36,7 +36,7 @@ function Projects() {
           <p>Tous mes projets se trouvent dans <a href="https://www.youtube.com/@SaraBrancoBarbosa" className="underline">ma page YouTube !</a></p>
           <Link to="/projects/videos">
             <button type="button" className="text-white rounded-2xl hover:scale-110 transition-transform duration-200">
-              Accéder à la page
+              Accéder aux vidéos
             </button>
           </Link>
         </div>  
