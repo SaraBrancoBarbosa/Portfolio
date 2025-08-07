@@ -76,7 +76,7 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
                                         src={tool.src}
                                         alt={tool.name}
                                         title={tool.name}
-                                        className="h-8 w-8 md:h-12 md:w-12 object-contain"
+                                        className="h-8 w-8 md:h-12 md:w-12 object-contain hover:scale-120 transition-transform duration-200"
                                     />
                                     ))}
                                 </div>
