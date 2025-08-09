@@ -24,7 +24,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 mb-5 sm:mb-6 gap-10 p-10 justify-center items-center rounded-2xl bg-violet-100 sm:min-h-104">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mb-5 lg:mb-10 gap-10 p-10 justify-center items-center rounded-2xl bg-violet-100 sm:min-h-104">
         <div className="flex flex-col items-center">
           <img src="assets/projects/projectVideos.png" className="w-64 sm:w-120" alt="Image d'illustration pour la section vidéos." />
         </div>
