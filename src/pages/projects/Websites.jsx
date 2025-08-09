@@ -14,10 +14,8 @@ function Websites() {
 
       <ScrollToTop />
       
-      <div className="bg-blue-500">
-        <h1>Les sites et applications web</h1>
-
-        <p>Cette section regroupe plusieurs de mes projets.</p>
+      <div className="mt-3 sm:mt-8">
+        <h1 className="text-4xl md:text-5xl">Les sites et applications web</h1>
       </div>
 
         <WebsitesContainer
@@ -157,29 +155,31 @@ function Websites() {
           ]}
         />
       
-        <WebsitesContainer
-          background="/assets/projects/backgrounds/econceptBg.webp"
-          image="assets/projects/econceptLogo.webp"
-          title="E-Concept Applications"
-          type="Refonte du site web de l'ntreprise de services informatiques pour particuliers et professionnels E-Concept Applications"
-          date="Avril – Juin 2022"
-          role="Développeuse web, graphiste, cheffe de projet. Projet réalisé seule, avec l’aide du tuteur de stage et directeur de l’entreprise, M. Martinet"
-          setting="Stage de Master 1 Information-Communication AMINJ à Metz"
-          websiteLink="https://e-concept-applications.fr/"
-          video={`https://youtu.be/PgIl2gos5bs`}
-          requests=
-            {`Refonte du site web, responsive
-            Graphisme (couleurs, mise en page, illustrations…)
-            Arborescence réadaptée`}
-          tools=
-            {`Bootstrap
-            Affinity Designer
-            Hébergement chez l’entreprise`}
-          toolsLogo={[
-            { name: "Bootstrap", src: "/assets/icons/tools/bootstrap.svg" },
-            { name: "Affinity Designer", src: "/assets/icons/tools/affinity.svg" },
-          ]}
-        />
+        <div className="mb-5 lg:mb-10">
+          <WebsitesContainer
+            background="/assets/projects/backgrounds/econceptBg.webp"
+            image="assets/projects/econceptLogo.webp"
+            title="E-Concept Applications"
+            type="Refonte du site web de l'ntreprise de services informatiques pour particuliers et professionnels E-Concept Applications"
+            date="Avril – Juin 2022"
+            role="Développeuse web, graphiste, cheffe de projet. Projet réalisé seule, avec l’aide du tuteur de stage et directeur de l’entreprise, M. Martinet"
+            setting="Stage de Master 1 Information-Communication AMINJ à Metz"
+            websiteLink="https://e-concept-applications.fr/"
+            video={`https://youtu.be/PgIl2gos5bs`}
+            requests=
+              {`Refonte du site web, responsive
+              Graphisme (couleurs, mise en page, illustrations…)
+              Arborescence réadaptée`}
+            tools=
+              {`Bootstrap
+              Affinity Designer
+              Hébergement chez l’entreprise`}
+            toolsLogo={[
+              { name: "Bootstrap", src: "/assets/icons/tools/bootstrap.svg" },
+              { name: "Affinity Designer", src: "/assets/icons/tools/affinity.svg" },
+            ]}
+          />
+        </div>
       </div>
   )
 }
