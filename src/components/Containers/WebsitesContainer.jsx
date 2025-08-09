@@ -12,7 +12,7 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
     }
   
     return (
-        <section className="relative overflow-hidden rounded-md">
+        <section className="relative overflow-hidden rounded-2xl">
 
             <div 
                 className="absolute inset-0 bg-cover bg-center filter scale-150 z-0 bg-blend-multiply bg-gray-400 "
@@ -21,9 +21,9 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
 
             <div className="relative z-10">
                 <div className="flex lg:gap-10 flex-col lg:flex-row p-5 md:p-10">
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-md p-5 pb-0 lg:pb-5">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-2xl p-5 pb-0 lg:pb-5">
                         <div className="flex flex-col gap-2 items-center text-center lg:items-start lg:text-start">
-                            <img src={image} alt="Logo du projet" className="h-24 md:h-40 w-fit rounded-md" />
+                            <img src={image} alt="Logo du projet" className="h-24 md:h-40 w-fit rounded-2xl" />
                             <h2 className="text-3xl md:text-4xl text-violet-700">{title}</h2>
                         </div>
                         <div>
@@ -56,9 +56,9 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
                         }
                     </div>
 
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-b-md lg:rounded-md p-5">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-b-md lg:rounded-2xl p-5">
                         <div>
-                            <h3 className="text-xl md:text-2xl text-violet-500">Vidéo(s) de navigation sur le site</h3>
+                            <h3 className="text-xl md:text-2xl text-violet-500">Vidéo de navigation sur le site</h3>
                             <a href={video} target="_blank" className="underline">{video}</a>
                         </div>
                         <div>
