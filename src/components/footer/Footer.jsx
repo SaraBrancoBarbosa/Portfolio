@@ -7,7 +7,7 @@ const logoMail = "assets/icons/logo-mail.svg"
 
 function Footer() {
     return (
-        <footer className="flex flex-col items-center bg-violet-200 w-full p-4">
+        <footer className="flex flex-col items-center justify-center bg-violet-200 w-full h-48 p-4 gap-6">
             <div className="flex gap-6 justify-center">
                 <Link to="https://www.linkedin.com/in/sara-barbosa-ba0157207/">
                     <img src={logoLinkedIn} className="w-10 sm:w-14 hover:scale-120 transition-transform duration-200" alt="Lien vers le compte LinkedIn" />
