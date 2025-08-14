@@ -14,7 +14,7 @@ function Websites() {
 
       <ScrollToTop />
       
-      <div className="mt-3 sm:mt-8">
+      <div className="mt-3 lg:mt-9">
         <h1 className="text-4xl md:text-5xl">Les sites et applications web</h1>
       </div>
 

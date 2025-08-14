@@ -55,7 +55,7 @@ function Header() {
                     {/* Projects' menu with dropdown */}
                     <div className="relative">
                         <div className="flex items-center">
-                            <Link to="/projects" >Projets</Link>
+                            <Link to="/projects">Projets</Link>
                             <svg 
                                 id="dropdown-menu"
                                 onClick={toggle}

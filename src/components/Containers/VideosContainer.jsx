@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 function VideosContainer({ background, video, youtubeLink, thumbnail, type, setting, tools, toolsLogo, presentation }) {
   return (
     <section 
-        className="flex flex-col xl:flex-row w-full gap-5 rounded-2xl p-5 md:p-10"
+        className="flex flex-col lg:flex-row w-full gap-5 rounded-2xl p-5 md:p-10"
         style={{ backgroundColor: background }}
     >
         
@@ -36,7 +36,7 @@ function VideosContainer({ background, video, youtubeLink, thumbnail, type, sett
                 <p>{setting}</p>
             </div>
             <div>
-                <h3 className="text-xl md:text-2xl text-violet-500">Logiciel</h3>
+                <h3 className="text-xl md:text-2xl text-violet-500">Logiciel(s)</h3>
                 <p>{formatList(tools)}</p>
                 {toolsLogo && (
                     <div className="flex items-center justify-start gap-4 mt-4">

@@ -14,12 +14,12 @@ function Videos() {
 
       <ScrollToTop />
 
-      <div className="mt-3 sm:mt-8">
+      <div className="mt-3 lg:mt-9">
         <h1 className="text-4xl md:text-5xl">Les montages vidéos</h1>
       </div>
 
       <VideosContainer
-        background="#FFC9C9"
+        background="#fee2e2"
         video={`/assets/videos/SetMeFree.mp4`}
         thumbnail="assets/videos/SetMeFreeThumbnail.jpg"
         youtubeLink={`https://youtu.be/DE2VneeHYYY?si=T62lsHc-3iApYgsg`}
@@ -34,7 +34,7 @@ function Videos() {
       />
 
       <VideosContainer
-        background="#C6F4FE"
+        background="#cffafe"
         video={`/assets/videos/Mouche.mp4`}
         thumbnail="assets/videos/MoucheThumbnail.jpg"
         youtubeLink={`https://youtube.com/shorts/7K1SozXF3QU?si=30UnH31Mv_3o7e_j`}
@@ -53,7 +53,7 @@ function Videos() {
       /> 
 
       <VideosContainer
-        background="#FEF1C6"
+        background="#fef3c7"
         video={`/assets/videos/Mabele.mp4`}
         thumbnail="assets/videos/MabeleThumbnail.jpg"
         youtubeLink={`https://youtu.be/poMUwkWI6lc?si=OXCSKQSIBdbde6Yz`}
@@ -69,7 +69,7 @@ function Videos() {
 
       <div className="mb-5 lg:mb-10">
         <VideosContainer
-          background="#E0F9E0"
+          background="#dcfce7"
           video={`/assets/videos/BelfortTourisme.mp4`}
           thumbnail="assets/videos/BelfortTourismeThumbnail.jpg"
           youtubeLink={`https://youtu.be/q4TZETGRGgE?si=rMREZocj-R_MdfXR`}
