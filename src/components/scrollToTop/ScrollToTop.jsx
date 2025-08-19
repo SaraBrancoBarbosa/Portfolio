@@ -1,10 +1,20 @@
 import { useEffect, useState } from "react"
+import { useLocation } from "react-router"
 
-// Button to scroll to top of page
+// Button to scroll to the top of the page: when changing route and when clicking on the button
 
 function ScrollToTop() {
     const [scrollToTopBtn, setScrollToTopBtn] = useState(false)
 
+    // To detect the changing routes
+    const location = useLocation
+
+    // To scroll to the top when changing the route
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [location])
+
+    // To scroll to the top when clicking on the button
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if(window.scrollY > 200) {
