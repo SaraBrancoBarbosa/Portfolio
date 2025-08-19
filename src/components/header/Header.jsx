@@ -36,13 +36,13 @@ function Header() {
     },[])
     
     return (
-        <header className="bg-violet-200">
-            <div className="px-10 py-7 flex flex-col gap-2 sm:gap-6 sm:flex-row items-center justify-center sm:justify-between">
+        <header className="bg-violet-200 ">
+            <div className="px-5 xl:px-20 py-7 flex flex-col gap-2 sm:gap-6 sm:flex-row items-center justify-center sm:justify-between">
                 
                 <Link to="/">
                     <img 
                         src="assets/ProjetLogo.svg" 
-                        className="w-24 sm:w-48" 
+                        className="w-24 md:w-48" 
                         alt="Logo du site. Le lien mène à la page d'accueil." 
                     />
                 </Link>
