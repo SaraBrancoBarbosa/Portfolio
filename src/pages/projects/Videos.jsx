@@ -1,13 +1,8 @@
-import { useEffect } from "react"
 import ScrollToTop from "../../components/scrollToTop/ScrollToTop"
 import VideosContainer from "../../components/Containers/VideosContainer"
 
 function Videos() {
-  
-  // To load at the top of the page after render
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+
   
   return (
     <div className="w-full flex flex-col gap-5 lg:gap-10">
@@ -24,13 +19,13 @@ function Videos() {
         thumbnail="assets/videos/SetMeFreeThumbnail.jpg"
         youtubeLink={`https://youtu.be/DE2VneeHYYY?si=T62lsHc-3iApYgsg`}
         type="Vidéo promotionnelle d’une application mobile (fictive)"
-        setting="Cours de Master 2 AMINJ (2022), création d’une application mobile et gestion de projet. Travail en binôme (avec Adrien Cauchy)"
+        setting="Cours de Master 2 AMINJ (2022). Travail en binôme (avec Adrien Cauchy)"
         tools=
           {`Canva`}
         toolsLogo={[
           { name: "Canva", src: "/assets/icons/tools/canva.svg" },
         ]}
-        presentation="Cette vidéo accompagne tout un projet d’invention d’une application mobile : sa création, son interface graphique, la définition des fonctionnalités, sa mise en ligne... La vidéo joue sur l'ironie, avec une musique pleine d'espoir pour une situation en réalité assez cocasse."
+        presentation="Cette vidéo accompagne tout un projet de création d’une application mobile : sa création, son interface graphique, la définition des fonctionnalités, sa mise en ligne... La vidéo joue sur l'ironie, avec une musique pleine d'espoir pour une situation en réalité assez cocasse."
       />
 
       <VideosContainer
@@ -58,7 +53,7 @@ function Videos() {
         thumbnail="assets/videos/MabeleThumbnail.jpg"
         youtubeLink={`https://youtu.be/poMUwkWI6lc?si=OXCSKQSIBdbde6Yz`}
         type="Présentation et comparaison détaillée de deux CMS, PrestaShop et Wordpress (WooCommerce)"
-        setting="Cours de Master 1 AMINJ (2021)"
+        setting="Cours de Master 1 AMINJ (2021). Travail en binôme (avec Adrien Cauchy)"
         tools=
           {`Adobe Première Pro`}
         toolsLogo={[
