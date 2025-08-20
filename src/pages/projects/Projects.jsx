@@ -8,7 +8,7 @@ function Projects() {
         <h1 className="text-4xl md:text-5xl">Mes projets</h1>
       </div>
 
-      <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 gap-10 p-5 sm:p-10 justify-center items-center rounded-2xl bg-violet-100 sm:min-h-104">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 p-5 sm:p-10 justify-center items-center rounded-2xl bg-violet-100 sm:min-h-104">
         <div className="flex flex-col items-center text-center gap-5 p-10 rounded-2xl bg-white">
           <p>Cette section regroupe une sélection de sites web que j'ai codés dans différents contextes (formations, stages, projets personnels...).</p>
           <p>Tous mes autres projets se trouvent dans <a href="https://github.com/SaraBrancoBarbosa" className="underline">ma page GitHub !</a></p>
@@ -24,7 +24,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 mb-5 lg:mb-10 gap-10 p-5 sm:p-10 justify-center items-center rounded-2xl bg-violet-100 sm:min-h-104">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mb-5 lg:mb-10 gap-10 p-5 sm:p-10 justify-center items-center rounded-2xl bg-violet-100 sm:min-h-104">
         <div className="flex flex-col items-center">
           <img src="assets/projects/projectVideos.webp" className="w-64 sm:w-120" alt="Image d'illustration pour la section vidéos." />
         </div>
