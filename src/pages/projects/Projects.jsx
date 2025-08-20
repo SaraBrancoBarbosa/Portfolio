@@ -1,8 +1,11 @@
 import { Link } from "react-router"
+import ScrollToTop from "../../components/scrollToTop/ScrollToTop"
 
 function Projects() {
   return (
     <div className="flex flex-col gap-5 lg:gap-10 w-full">
+      
+      <ScrollToTop />
       
       <div className="mt-3 sm:mt-9">
         <h1 className="text-4xl md:text-5xl">Mes projets</h1>
