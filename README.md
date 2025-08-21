@@ -1,4 +1,4 @@
-![Logo du portfolio.](/public/assets/READMELogo.svg)
+![Logo du portfolio.](/public/assets/READMELogo.png)
 
 # Mon portfolio
 Bienvenue sur mon portfolio ! <br>
