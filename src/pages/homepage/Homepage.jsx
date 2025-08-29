@@ -27,7 +27,7 @@ function Homepage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 flex-row justify-between items-center">
           <div className="flex flex-col items-center text-center justify-center gap-5 p-3 lg:p-10 rounded-2xl h-full bg-violet-100">
-            <p className="p-10 rounded-2xl bg-white min-h-[182px] block content-center">          
+            <p className="p-3 lg:p-10 rounded-2xl bg-white min-h-[182px] block content-center">          
               Lors de la conception d'un projet web, <span className="font-bold">la communication avec le commanditaire et les utilisateurs</span> m'est prioritaire et fait partie intégrante du code.
               J'aime me focaliser sur <span className="font-bold">l'expérience utilisateur</span> et réfléchir à la meilleure solution pour rendre la navigation du site la plus agréable possible tout en répondant au besoin initial.               
             </p>
@@ -36,7 +36,7 @@ function Homepage() {
           </div>
 
           <div className="flex flex-col items-center text-center justify-center gap-10 p-3 lg:p-10 rounded-2xl h-full bg-violet-100">
-            <p className="p-10 rounded-2xl bg-white min-h-[182px] block content-center">          
+            <p className="p-3 lg:p-10 rounded-2xl bg-white min-h-[182px] block content-center">          
               J'affectionne aussi tout particulièrement <span className="font-bold">la création de contenu artistique</span>. 
               Lorsque le projet le permet, j'aime proposer des <span className="font-bold">illustrations</span> ! Je dessine régulièrement lors de mon temps libre.
               Je me remets également au <span className="font-bold">montage vidéo</span> et je serais ravie d'en réaliser d'autres à l'avenir.
