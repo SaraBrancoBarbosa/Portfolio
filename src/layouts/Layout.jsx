@@ -8,7 +8,7 @@ const Layout = () => {
         <div className="w-full">
           <Header />
 
-          <main className="mx-auto px-5 xl:px-20 md:flex mb-auto min-h-[calc(100vh-185px)]">
+          <main className="mx-auto px-3 xl:px-20 md:flex mb-auto min-h-[calc(100vh-185px)]">
             <Outlet />
           </main>
 

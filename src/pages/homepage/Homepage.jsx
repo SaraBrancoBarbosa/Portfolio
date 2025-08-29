@@ -8,8 +8,8 @@ function Homepage() {
         <h1 className="text-4xl md:text-5xl">Bienvenue sur mon portfolio !</h1>
       </div>
 
-      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 p-5 lg:p-10 justify-center items-center rounded-2xl bg-violet-100 lg:min-h-104">
-        <div className="flex flex-col items-center text-center gap-5 p-10 rounded-2xl bg-white">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 p-3 lg:p-10 justify-center items-center rounded-2xl bg-violet-100 lg:min-h-104">
+        <div className="flex flex-col items-center text-center gap-5 p-5 lg:p-10 rounded-2xl bg-white">
           <h2 className="text-2xl lg:text-3xl text-violet-700">Je suis Sara Barbosa, une passionnée de langues et d’informatique.</h2>
 
           <p>Après avoir étudié les langues au <span className="font-bold">Master Langues et Sociétés</span> (parcours Plurilinguisme et Interculturalité) à l’Université de Strasbourg, 

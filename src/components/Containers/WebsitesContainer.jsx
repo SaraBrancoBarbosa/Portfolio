@@ -19,8 +19,8 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
             />
 
             <div className="relative z-10">
-                <div className="flex lg:gap-10 flex-col lg:flex-row p-5 md:p-10">
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-2xl p-5 lg:p-10 pb-0 lg:pb-10">
+                <div className="flex lg:gap-10 flex-col lg:flex-row p-3 md:p-10">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-2xl p-3 lg:p-10 pb-0 lg:pb-10">
                         <div className="flex flex-col gap-2 items-center text-center lg:items-start lg:text-start">
                             <img src={image} alt="Logo du projet" className="h-24 md:h-40 w-fit rounded-2xl" />
                             <h2 className="text-3xl md:text-4xl text-violet-700">{title}</h2>
@@ -44,7 +44,7 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
                         {codeLink &&
                             <div>
                                 <h3 className="text-xl md:text-2xl text-violet-500">Lien du code</h3>
-                                <a href={codeLink} target="_blank" className="underline">{codeLink}</a>
+                                <a href={codeLink} target="_blank" className="underline">Lien GitHub</a>
                             </div>
                         }
                         {forumLink &&
@@ -55,10 +55,10 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
                         }
                     </div>
 
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-b-md lg:rounded-2xl p-5 lg:p-10">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-b-md lg:rounded-2xl p-3 lg:p-10">
                         <div>
                             <h3 className="text-xl md:text-2xl text-violet-500">Vidéo de navigation sur le site</h3>
-                            <a href={video} target="_blank" className="underline">{video}</a>
+                            <a href={video} target="_blank" className="underline">Lien YouTube</a>
                         </div>
                         <div>
                             <h3 className="text-xl md:text-2xl text-violet-500">Demandes du commanditaire</h3>
@@ -68,7 +68,7 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
                             <h3 className="text-xl md:text-2xl text-violet-500">Outils utilisés</h3>
                             <p>{formatList(tools)}</p>
                             {toolsLogo && (
-                                <div className="flex items-center justify-center gap-4 mt-4">
+                                <div className="flex items-center justify-center gap-4 mt-4 flex-wrap">
                                     {toolsLogo.map((tool, index) => (
                                     <img
                                         key={index}
