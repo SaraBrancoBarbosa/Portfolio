@@ -41,7 +41,7 @@ function Header() {
                 
                 <Link to="/">
                     <img 
-                        src="assets/ProjetLogo.svg" 
+                        src="assets/Logo.png" 
                         className="w-24 md:w-48" 
                         alt="Logo du site. Le lien mène à la page d'accueil." 
                     />
