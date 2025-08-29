@@ -1,5 +1,3 @@
-![Logo du portfolio.](/public/assets/READMELogo.png)
-
 # Mon portfolio
 Bienvenue sur mon portfolio ! <br>
 J'y parle de mon parcours et de mes envies professionnelles, notamment dans les domaines du développement web front-end, de la communication et des langues. <br>
