@@ -42,7 +42,7 @@ function Header() {
                 <Link to="/">
                     <img 
                         src="assets/ProjetLogo.svg" 
-                        className="w-24 md:w-48 p-1" 
+                        className="w-24 md:w-48 p-1 h-full" 
                         alt="Logo du site. Le lien mène à la page d'accueil." 
                     />
                 </Link>

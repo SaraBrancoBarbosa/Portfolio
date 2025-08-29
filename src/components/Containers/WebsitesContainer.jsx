@@ -20,7 +20,7 @@ function WebsitesContainer({ background, image, title, type, date, role, setting
 
             <div className="relative z-10">
                 <div className="flex lg:gap-10 flex-col lg:flex-row p-3 md:p-10">
-                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-2xl p-3 lg:p-10 pb-0 lg:pb-10">
+                    <div className="flex flex-col gap-5 w-full lg:w-1/2 bg-white rounded-t-md lg:rounded-2xl p-3 lg:p-10 pb-2 lg:pb-10">
                         <div className="flex flex-col gap-2 items-center text-center lg:items-start lg:text-start">
                             <img src={image} alt="Logo du projet" className="h-24 md:h-40 w-fit rounded-2xl" />
                             <h2 className="text-3xl md:text-4xl text-violet-700">{title}</h2>
