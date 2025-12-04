@@ -29,6 +29,40 @@ function Videos() {
       />
 
       <VideosContainer
+        background="#d2b9ffff"
+        video={`assets/videos/SiennaArtTrend.mp4`}
+        thumbnail="assets/videos/SiennaArtTrendThumbnail.png"
+        youtubeLink={`https://youtube.com/shorts/QKiA3f21GxA?si=Egf9zIXONvslqE-1`}
+        type="Sienna Art trend, pour mon compte artiste"
+        setting="Projet personnel pour mes réseaux sociaux (2025)"
+        tools=
+          {`DaVinci Resolve
+            Paint Tool SAI`}
+        toolsLogo={[
+          { name: "DaVinci Resolve", src: "assets/icons/tools/davinci.svg" },
+          { name: "Paint Tool SAI", src: "assets/icons/tools/sai.svg" },
+        ]}
+        presentation="J'ai voulu travailler sur un temps très court pour un format reel Instagram et short YouTube. Le défi se situait surtout au niveau des dessins à réaliser ! J'ai eu un coup de coeur pour le logiciel de montage vidéo DaVinci Resolve, que je trouve très fluide d'utilisation. J'ai notamment appris à gérer le timing pour l'apparition des textes."
+      />
+
+      <VideosContainer
+        background="#FFD1A1"
+        //video={`assets/videos/LineartAndRender.mp4`}
+        thumbnail="assets/videos/LineartAndRenderThumbnail.png"
+        youtubeLink={`https://youtu.be/dBNX1Jyi8Kw?si=Fhy9B6TUSwwa2cxJ`}
+        type="Processus de dessin pour mon compte artiste"
+        setting="Projet personnel (2025). La vidéo étant trop longue pour l'uploader sur mon site, vous pouvez la visionner en cliquant sur le lien YouTube !"
+        tools=
+          {`DaVinci Resolve
+            Paint Tool SAI`}
+        toolsLogo={[
+          { name: "DaVinci Resolve", src: "assets/icons/tools/davinci.svg" },
+          { name: "Paint Tool SAI", src: "assets/icons/tools/sai.svg" },
+        ]}
+        presentation="J'ai voulu tester plusieurs fonctionnalités de DaVinci Resolve sur un projet de 30 minutes : découpage et montage des rushes (avec accélération etc.), textes, timing des musiques sur certains passages... Ce projet était surtout une occasion de documenter mon apprentissage du travail des ombres et des lumières de mes dessins !"
+      />
+
+      <VideosContainer
         background="#cffafe"
         video={`assets/videos/Mouche.mp4`}
         thumbnail="assets/videos/MoucheThumbnail.jpg"
